@@ -611,14 +611,14 @@ transform: scale(1.2);
   flex-direction: column;
   gap: 30px;
   width: 100%;
-  height: 100vh; /* Change to auto for better responsiveness */
+  height: 100vh; 
   background: #0a9a7b;
   color: white;
-  padding:  0; /* Add padding to the top and bottom */
+  padding:  0; 
 }
 
 .contact-container .row {
-  margin: 0 200px; /* Margin for larger screens */
+  margin: 0 200px; 
   display: flex;
   background: #00856f;
   padding: 50px;
@@ -658,22 +658,20 @@ transform: scale(1.2);
 
 @keyframes moveAndRotate {
   0% {
-    transform: translate(0, 0) rotate(0deg); /* Initial position */
+    transform: translate(0, 0) rotate(0deg); 
   }
   40% {
-    transform: translate(200px, -200px) rotate(180deg); /* New position, rotate 180deg */
+    transform: translate(200px, -200px) rotate(180deg); 
   }
   65% {
-    transform: translate(-100px, 80px); /* Intermediate position */
+    transform: translate(-100px, 80px);
   }
   70% {
-    transform: translate(0, 0) rotate(0deg); /* Back to original position */
+    transform: translate(0, 0) rotate(0deg);
   }
   85% {
-    /* Add any effect here if needed */
   }
   100% {
-    /* Add any effect here if needed */
   }
 }
 .fa-phone.scrolled {
@@ -726,8 +724,8 @@ transform: scale(1.2);
 }
 .social-icons .button-icon {
   display: inline-block;
-  height: 40px; /* Keep button height */
-  width: 40px; /* Initial width without span */
+  height: 40px; 
+  width: 40px; 
   overflow: hidden;
   margin: 20px 5px;
   background: #fdb909;
@@ -735,7 +733,7 @@ transform: scale(1.2);
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   transition: all 0.3s ease-in-out;
-  white-space: nowrap; /* Prevent text wrapping */
+  white-space: nowrap; 
 }
 
 .social-icons .button-icon:hover {
@@ -751,12 +749,11 @@ transform: scale(1.2);
   height: 40px;
   width: 40px;
   line-height: 40px;
-  font-size: 23px; /* Adjust icon size */
+  font-size: 23px; 
   border-radius: 50%;
   box-sizing: border-box;
-  float: left; /* Keep icon to the left */
-  transition: background 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition for background and color */
-}
+  float: left; 
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out; }
 
 /* Facebook icon hover */
 .social-icons .button-icon:nth-child(1):hover .s-icon {
@@ -784,8 +781,8 @@ transform: scale(1.2);
   font-weight: 600;
   line-height: 40px;
   margin-left: 10px;
-  opacity: 0; /* Initially hide text */
-  transition: opacity 0.3s ease-in-out; /* Smooth transition for opacity */
+  opacity: 0; 
+  transition: opacity 0.3s ease-in-out; 
 }
 .social-icons .button-icon:nth-child(1):hover span{
   color: #0866ff;
@@ -825,14 +822,14 @@ form textarea {
   margin: 15px 0;
   font-size: 18px;
   border-radius: 25px;
-  color: #fff; /* Text color inside input */
+  color: #fff; 
 }
 
 /* Placeholder color */
 form input::placeholder,
 form textarea::placeholder {
   color: #ffffff;
-  opacity: 1; /* Ensures full opacity for the placeholder text */
+  opacity: 1; 
   font-family: "Zeyada", cursive;
 }
 
@@ -850,7 +847,7 @@ form textarea::placeholder {
               transform 0.2s ease;
 }
 .button_submit.complete::before {
-  display: none; /* Completely removes the pseudo-element */
+  display: none; 
 }
 
 
@@ -860,7 +857,7 @@ form textarea::placeholder {
 }
 
 .button_submit.active .content {
-  transform: translateY(60px); /* Slide content down when active */
+  transform: translateY(60px); 
 }
 
 .button_submit .content {
@@ -869,28 +866,27 @@ form textarea::placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.4s ease; /* Add transition for the content sliding */
+  transition: transform 0.4s ease; 
 }
 
 .button_submit::before {
   content: '';
   position: absolute;
   top: 0;
-  left: -100%; /* Initially off-screen */
+  left: -100%; 
   height: 100%;
   width: 100%;
   background: #d29804;
   border-radius: 55px;
-  transition: left 6s ease-in-out; /* Smoother transition for ::before sliding in */
+  transition: left 6s ease-in-out; 
 }
 
 .button_submit.active::before {
-  left: 0%; /* Moves the pseudo-element into view when active */
+  left: 0%; 
 }
 
-/* This hides the ::before pseudo-element when the complete class is added */
 .button_submit.complete::before {
-  visibility: hidden; /* Hides the pseudo-element instantly */
+  visibility: hidden; 
 }
 
 .button_submit .button-text {
@@ -929,28 +925,28 @@ form textarea::placeholder {
   }
  
   .contact-container {
-    height: auto; /* Change to auto for better responsiveness */
+    height: auto; 
   }
   
 
   .contact-container .row {
-    flex-direction: column; /* Stack the columns */
-    margin: 0 5%; /* Adjust margin for smaller screens */
-    padding: 30px; /* Adjust padding */
+    flex-direction: column; 
+    margin: 0 5%; 
+    padding: 30px; 
   }
 
   .contact-left,
   .contact-right {
-    flex-basis: 100%; /* Make full width */
-  }
+    flex-basis: 100%; }
+
 
   .contact-left p i {
-    font-size: 20px; /* Smaller icon size */
+    font-size: 20px; 
   }
 
   form input,
   form textarea {
-    font-size: 16px; /* Smaller input size */
+    font-size: 16px; 
   }
 
  
@@ -958,35 +954,35 @@ form textarea::placeholder {
 /* Styles for screens between 689px and 1185px */
 @media screen and (min-width: 689px) and (max-width: 1185px) {
   .contact-container .row {
-    flex-direction: column; /* Stack columns */
-    margin: 0 10%; /* Reduce side margins */
-    padding: 30px; /* Adjust padding */
+    flex-direction: column; 
+    margin: 0 10%; 
+    padding: 30px;
   }
 
   .contact-left, .contact-right {
-    flex-basis: 100%; /* Full width for smaller screens */
-    padding: 0 10px; /* Reduce inner padding */
+    flex-basis: 100%; 
+    padding: 0 10px; 
   }
 
   #contact h2 {
-    font-size: 30px; /* Slightly smaller heading */
+    font-size: 30px;
   }
 
   .contact-left p i {
-    font-size: 22px; /* Smaller icon size */
-    margin-right: 10px; /* Adjust icon spacing */
+    font-size: 22px; 
+    margin-right: 10px; 
   }
 
   .social-icons a {
-    font-size: 25px; /* Smaller icon size */
-    margin-right: 10px; /* Adjust icon spacing */
+    font-size: 25px; 
+    margin-right: 10px; 
   }
 
   form input,
   form textarea {
-    font-size: 16px; /* Adjust input font size */
-    padding: 12px; /* Adjust padding for inputs */
-    margin: 10px 0; /* Adjust spacing */
+    font-size: 16px; 
+    padding: 12px; 
+    margin: 10px 0;
   }
  
 }
@@ -1015,13 +1011,13 @@ form textarea::placeholder {
 }
 @media screen and (min-width: 689px) and (max-width: 1185px) {
   .footer {
-    padding-top: 100px; /* Adds extra space at the top */
-    padding-bottom: 30px; /* Adds padding at the bottom */
-    font-size: 14px; /* Adjust font size for better readability */
+    padding-top: 100px; 
+    padding-bottom: 30px; 
+    font-size: 14px; 
   }
 
   .footer h1 {
-    font-size: 23px; /* Adjust heading font size */
+    font-size: 23px; 
   }
 
   
